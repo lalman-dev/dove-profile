@@ -15,9 +15,7 @@ import {
 
 export default function Hero() {
   return (
-    <section
-    id="home"
-    className="flex min-h-screen items-center py-20">
+    <section id="home" className="flex min-h-screen items-center py-20">
       <div className="section-container w-full">
         <motion.div
           variants={staggerContainer}
@@ -28,13 +26,19 @@ export default function Hero() {
           {/* Content */}
 
           <motion.div variants={fadeLeft} className="space-y-8">
-            <motion.span
-              variants={fadeUp}
-              whileHover={{ y: -2 }}
-              className="inline-flex items-center rounded-full bg-amber-100 px-4 py-2 text-sm font-medium text-amber-800"
+            <motion.a
+              animate={{ y: [0, -8, 0] }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              href={`https://wa.me/${profile.phone.replace(/\D/g, "")}`}
+              className="fixed right-6 bottom-6 z-40 flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-medium text-white shadow-lg"
             >
-              Available For Immediate Joining
-            </motion.span>
+              <span className="h-2 w-2 rounded-full bg-white" />
+              Immediate Joiner
+            </motion.a>
 
             <div>
               <motion.p
