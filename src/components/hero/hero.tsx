@@ -1,169 +1,157 @@
+"use client";
+
 import Image from "next/image";
-import { profile } from "@/data/profile";
-import { MapPin, Phone, Download } from "lucide-react";
+import { motion } from "framer-motion";
+import { Download, MapPin } from "lucide-react";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import profileImage from "@/assets/dove-profile.jpg";
+import { profile } from "@/data/profile";
+import {
+  fadeLeft,
+  fadeRight,
+  fadeUp,
+  staggerContainer,
+} from "@/lib/animations";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center">
+    <section className="flex min-h-screen items-center py-20">
       <div className="section-container w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* LEFT */}
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+          className="grid items-center gap-16 lg:grid-cols-2"
+        >
+          {/* Content */}
 
-          <div className="space-y-8">
-            <span
-              className="
-              inline-flex
-              items-center
-              rounded-full
-              bg-amber-100
-              px-4
-              py-2
-              text-sm
-              font-medium
-              text-amber-800
-            "
+          <motion.div variants={fadeLeft} className="space-y-8">
+            <motion.span
+              variants={fadeUp}
+              whileHover={{ y: -2 }}
+              className="inline-flex items-center rounded-full bg-amber-100 px-4 py-2 text-sm font-medium text-amber-800"
             >
               Available For Immediate Joining
-            </span>
+            </motion.span>
 
             <div>
-              <p className="uppercase tracking-[0.3em] text-sm text-neutral-500 mb-4">
+              <motion.p
+                variants={fadeUp}
+                className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-500"
+              >
                 Customer Service & Hospitality
-              </p>
+              </motion.p>
 
-              <h1
-                className="
-                heading-font
-                text-5xl
-                md:text-7xl
-                leading-tight
-                text-neutral-900
-              "
+              <motion.h1
+                variants={fadeUp}
+                className="heading-font text-5xl leading-tight text-neutral-900 md:text-7xl"
               >
                 {profile.name}
-              </h1>
+              </motion.h1>
 
-              <h2
-                className="
-                mt-6
-                text-xl
-                md:text-2xl
-                text-[#B08A5B]
-                font-medium
-              "
+              <motion.h2
+                variants={fadeUp}
+                className="mt-6 text-xl font-medium text-[#B08A5B] md:text-2xl"
               >
                 {profile.title}
-              </h2>
+              </motion.h2>
             </div>
 
-            <p
-              className="
-              text-lg
-              text-neutral-600
-              leading-relaxed
-              max-w-xl
-            "
+            <motion.p
+              variants={fadeUp}
+              className="max-w-xl text-lg leading-relaxed text-neutral-600"
             >
               Former H&M Sales Advisor with experience in customer service,
               retail sales, POS operations, guest relations, and hospitality
               support. Currently based in Sharjah and open to opportunities
               across the UAE.
-            </p>
+            </motion.p>
 
-            <div className="flex items-center gap-3 text-neutral-600">
+            <motion.div
+              variants={fadeUp}
+              className="flex items-center gap-3 text-neutral-600"
+            >
               <MapPin size={18} />
               <span>{profile.location}</span>
-            </div>
+            </motion.div>
 
-            <div className="flex flex-wrap gap-4 pt-4">
-              <a
+            <motion.div variants={fadeUp} className="flex flex-wrap gap-4 pt-2">
+              <motion.a
+                whileHover={{
+                  scale: 1.05,
+                  y: -2,
+                }}
+                whileTap={{ scale: 0.97 }}
                 href={`https://wa.me/${profile.phone.replace(/\D/g, "")}`}
                 target="_blank"
-                className="
-                flex items-center px-6
-                py-3
-                rounded-full
-                bg-[#B08A5B]
-                text-white
-                font-medium
-                hover:opacity-90
-                transition
-                "
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 font-medium text-white shadow-sm transition-colors hover:bg-[#20ba5a]"
               >
-                <Phone /> WhatsApp
-              </a>
+                <FaWhatsapp size={20} />
+                WhatsApp
+              </motion.a>
 
-              <a
+              <motion.a
+                whileHover={{
+                  scale: 1.05,
+                  y: -2,
+                }}
+                whileTap={{ scale: 0.97 }}
                 href={profile.linkedin}
                 target="_blank"
-                className="
-                px-6 flex items-center
-                py-3
-                rounded-full
-                border
-                border-neutral-300
-                hover:border-[#B08A5B]
-                transition
-                "
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-[#0A66C2] px-6 py-3 font-medium text-white shadow-sm"
               >
-                Linkedin
-              </a>
+                <FaLinkedinIn size={18} />
+                LinkedIn
+              </motion.a>
 
-              <button
-                className="
-               flex items-center px-6
-                py-3
-                rounded-full
-                border
-                border-neutral-300
-                hover:border-[#B08A5B]
-                transition
-                "
+              <motion.a
+                whileHover={{
+                  y: -2,
+                  borderColor: "#B08A5B",
+                }}
+                whileTap={{ scale: 0.98 }}
+                href="/Dove-Aien-CV.pdf"
+                download
+                className="inline-flex items-center gap-2 rounded-full border border-neutral-300 bg-white px-6 py-3 shadow-sm transition-colors"
               >
-                <Download /> Download CV
-              </button>
-            </div>
-          </div>
+                <Download size={18} />
+                Download CV
+              </motion.a>
+            </motion.div>
+          </motion.div>
 
-          {/* RIGHT */}
+          {/* Image */}
 
-          <div className="flex justify-center">
-            <div
-              className="
-              relative
-              w-85
-              h-112.5
-              md:w-105
-              md:h-135
-              "
+          <motion.div variants={fadeRight} className="flex justify-center">
+            <motion.div
+              whileHover={{ y: -6 }}
+              transition={{ duration: 0.3 }}
+              className="relative h-[450px] w-[340px] md:h-[540px] md:w-[420px]"
             >
-              <div
-                className="
-                absolute
-                inset-0
-                rounded-[40px]
-                bg-[#E6D5B8]
-                rotate-3
-                "
+              <motion.div
+                animate={{
+                  rotate: [3, 2, 3],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="absolute inset-0 rounded-[40px] bg-[#E6D5B8]"
               />
 
               <Image
                 src={profileImage}
                 alt={profile.name}
                 fill
-                className="
-                object-cover
-                rounded-[40px]
-                relative
-                z-10
-                shadow-2xl
-                "
                 priority
+                className="relative z-10 rounded-[40px] object-cover shadow-2xl"
               />
-            </div>
-          </div>
-        </div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
