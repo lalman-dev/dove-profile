@@ -44,4 +44,20 @@ skills.
       label: "Immediate Joiner",
     },
   ],
+  about: {
+    heading: "About Me",
+    description: `
+I am a customer-focused professional with a passion for helping people and creating positive customer experiences.
+
+My professional journey began in retail as a Sales Advisor at H&M, where I developed strong communication, customer service, merchandising, and sales skills while working in a fast-paced environment.
+
+After relocating to the UAE, I continued developing my professionalism, adaptability, and responsibility while gaining valuable experience working in a multicultural environment.
+
+Today, I am seeking opportunities where I can continue growing within retail, hospitality, reception, and customer service roles while contributing positively to the success of the organization.
+  `,
+
+    philosophy: `
+I believe excellent customer service is built on understanding customer needs, creating positive experiences, and building trust through professionalism, communication, and genuine care.
+  `,
+  },
 };
