@@ -25,7 +25,6 @@ skills.
     "Hospitality",
     "Communication",
   ],
-  languages: ["English", "Tagalog", "Arabic (Basic)"],
   highlights: [
     {
       value: "2+",
@@ -85,6 +84,20 @@ I believe excellent customer service is built on understanding customer needs, c
         "Strengthened communication, time management, and multitasking skills.",
         "Worked effectively in a multicultural environment.",
       ],
+    },
+  ],
+  languages: [
+    {
+      name: "English",
+      level: "Professional",
+    },
+    {
+      name: "Tagalog",
+      level: "Native",
+    },
+    {
+      name: "Arabic",
+      level: "Learning",
     },
   ],
 };
