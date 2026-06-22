@@ -6,7 +6,9 @@ import { fadeLeft, fadeRight, fadeUp } from "@/lib/animations";
 
 export default function Strengths() {
   return (
-    <section className="py-28">
+    <section
+    id="strengths"
+    className="py-28">
       <div className="section-container">
         <div className="grid gap-16 lg:grid-cols-2">
           <motion.div

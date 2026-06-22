@@ -8,7 +8,9 @@ import { profile } from "@/data/profile";
 
 export default function Contact() {
   return (
-    <footer className="border-t border-neutral-200 py-20">
+    <footer
+    id="contact"
+    className="border-t border-neutral-200 py-20">
       <div className="section-container">
         <div className="text-center">
           <span className="text-sm uppercase tracking-[0.25em] text-[#B08A5B]">

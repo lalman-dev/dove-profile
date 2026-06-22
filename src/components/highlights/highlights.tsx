@@ -6,7 +6,7 @@ import { fadeUp, staggerContainer } from "@/lib/animations";
 
 export default function Highlights() {
   return (
-    <section className="pb-24">
+    <section id="highlights" className="pb-24">
       <div className="section-container">
         <motion.div
           variants={staggerContainer}

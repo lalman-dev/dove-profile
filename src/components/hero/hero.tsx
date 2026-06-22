@@ -15,7 +15,9 @@ import {
 
 export default function Hero() {
   return (
-    <section className="flex min-h-screen items-center py-20">
+    <section
+    id="home"
+    className="flex min-h-screen items-center py-20">
       <div className="section-container w-full">
         <motion.div
           variants={staggerContainer}

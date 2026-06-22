@@ -5,7 +5,9 @@ import { profile } from "@/data/profile";
 
 export default function Objective() {
   return (
-    <section className="py-28">
+    <section
+    id="objective"
+    className="py-28">
       <div className="section-container">
         <motion.div
           initial={{

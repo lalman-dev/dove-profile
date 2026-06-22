@@ -7,7 +7,7 @@ import { fadeUp } from "@/lib/animations";
 
 export default function Experience() {
   return (
-    <section className="py-28">
+    <section id="experience" className="py-28">
       <div className="section-container max-w-4xl">
         <div className="mb-16 text-center">
           <span className="text-sm uppercase tracking-[0.25em] text-[#B08A5B]">
