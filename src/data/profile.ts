@@ -26,4 +26,22 @@ skills.
     "Communication",
   ],
   languages: ["English", "Tagalog", "Arabic (Basic)"],
+  highlights: [
+    {
+      value: "2+",
+      label: "Years Retail Experience",
+    },
+    {
+      value: "H&M",
+      label: "Sales Advisor Experience",
+    },
+    {
+      value: "UAE",
+      label: "Based In Sharjah",
+    },
+    {
+      value: "Now",
+      label: "Immediate Joiner",
+    },
+  ],
 };
