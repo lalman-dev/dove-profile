@@ -128,7 +128,7 @@ export default function Hero() {
             <motion.div
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3 }}
-              className="relative h-[450px] w-[340px] md:h-[540px] md:w-[420px]"
+              className="relative h-112.5 w-85 md:h-135 md:w-105"
             >
               <motion.div
                 animate={{

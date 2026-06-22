@@ -60,4 +60,31 @@ Today, I am seeking opportunities where I can continue growing within retail, ho
 I believe excellent customer service is built on understanding customer needs, creating positive experiences, and building trust through professionalism, communication, and genuine care.
   `,
   },
+  experience: [
+    {
+      company: "H&M",
+      role: "Sales Advisor",
+      period: "September 2021 – January 2024",
+      points: [
+        "Delivered excellent customer service in a fast-paced retail environment.",
+        "Assisted customers with product recommendations and purchasing decisions.",
+        "Handled POS transactions and cash management accurately.",
+        "Maintained visual merchandising and store presentation standards.",
+        "Supported inventory organization and stock replenishment.",
+      ],
+    },
+
+    {
+      company: "Private Family, UAE",
+      role: "Household Assistant",
+      period: "June 2024 – Present",
+      points: [
+        "Developed strong professionalism, reliability, and adaptability.",
+        "Managed multiple responsibilities while maintaining high standards.",
+        "Assisted guests with a welcoming and service-oriented approach.",
+        "Strengthened communication, time management, and multitasking skills.",
+        "Worked effectively in a multicultural environment.",
+      ],
+    },
+  ],
 };
