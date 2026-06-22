@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       "Former H&M Sales Advisor based in Sharjah, UAE. Open to opportunities in retail sales, customer service, hospitality and guest relations.",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://dove-aien.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Dove Aien Alinsasaguin",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dove Aien Alinsasaguin | Customer Service & Retail Professional",
     description: "Former H&M Sales Advisor based in Sharjah, UAE.",
-    images: ["/og-image.png"],
+    images: ["https://dove-aien.vercel.app/og-image.png"],
   },
   robots: {
     index: true,
