@@ -3,7 +3,7 @@ export const profile = {
   title: "Customer Service & Retail Professional",
   subtitle: "Former H&M Sales Advisor | Based in Sharjah, UAE",
   phone: "+971543122705",
-  email: "doveaienalinsasagiun@gmail.com",
+  email: "doveaienalinsasaguin@gmail.com",
   location: "Sharjah, UAE",
   availability: "Immediate Joiner",
   linkedin: "https://www.linkedin.com/in/dove-aien/",
