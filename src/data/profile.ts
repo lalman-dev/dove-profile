@@ -100,4 +100,29 @@ I believe excellent customer service is built on understanding customer needs, c
       level: "Learning",
     },
   ],
+  strengths: [
+    {
+      title: "Customer Service",
+      description:
+        "Committed to creating positive customer experiences and building trust through attentive service.",
+    },
+    {
+      title: "Communication",
+      description:
+        "Comfortable interacting with customers from diverse backgrounds with professionalism and empathy.",
+    },
+    {
+      title: "Professionalism",
+      description:
+        "Reliable, responsible, and able to represent a brand with confidence and integrity.",
+    },
+    {
+      title: "Adaptability",
+      description:
+        "Experienced working in dynamic and multicultural environments while maintaining high standards.",
+    },
+  ],
+
+  careerObjective:
+    "Seeking opportunities in retail sales, customer service, reception, hospitality, and guest relations where I can contribute my experience, continue learning, and create meaningful customer experiences.",
 };
