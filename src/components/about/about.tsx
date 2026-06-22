@@ -40,37 +40,34 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="
-              flex
-              items-center
-            "
+            className="flex items-center"
           >
-            <div
-              className="
-                rounded-[32px]
-                border
-                border-[#E6D5B8]
-                bg-white
-                p-10
-                shadow-sm
-              "
+            <motion.div
+              whileHover={{
+                y: -8,
+                scale: 1.02,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 250,
+                damping: 20,
+              }}
+              className="relative overflow-hidden rounded-4xl border border-[#E6D5B8] bg-white p-10 shadow-sm"
             >
               <span className="text-sm uppercase tracking-[0.25em] text-[#B08A5B]">
                 Customer Service Philosophy
               </span>
 
-              <blockquote
-                className="
-                  heading-font
-                  mt-6
-                  text-2xl
-                  leading-relaxed
-                  text-neutral-900
-                "
+              <motion.blockquote
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+                viewport={{ once: true }}
+                className=" heading-font mt-6 text-2xl leading-relaxed text-neutral-900"
               >
                 "{profile.about.philosophy.trim()}"
-              </blockquote>
-            </div>
+              </motion.blockquote>
+            </motion.div>
           </motion.div>
         </div>
       </div>
