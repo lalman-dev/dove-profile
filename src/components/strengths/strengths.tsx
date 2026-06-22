@@ -14,7 +14,7 @@ export default function Strengths() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="sticky top-32 h-fit"
+            className="lg:sticky lg:top-32 h-fit"
           >
             <span className="text-sm uppercase tracking-[0.25em] text-[#B08A5B]">
               Personal Strengths

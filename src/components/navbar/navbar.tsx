@@ -47,18 +47,7 @@ export default function Navbar() {
     <nav
       className={`fixed left-4 right-4 z-50 overflow-x-auto rounded-full border border-white/40 backdrop-blur-xl transition-all duration-300 ${scrolled ? "top-3 bg-transparent backdrop-blur-sm shadow-xl px-3 py-1" : "top-5 bg-white/80 shadow-lg px-4 py-3"}`}
     >
-      <div className="flex items-center justify-between gap-2">
-        <button
-          onClick={() =>
-            document.getElementById("home")?.scrollIntoView({
-              behavior: "smooth",
-            })
-          }
-          className="flex h-9 w-9 items-center justify-center rounded-full bg-[#B08A5B] text-sm font-semibold text-white shadow-sm transition-transform hover:scale-105"
-        >
-          D
-        </button>
-
+      <div className="flex items-center gap-2">
         <ul className="flex items-center gap-1 whitespace-nowrap">
           {navItems.map((item) => (
             <li key={item.id}>
