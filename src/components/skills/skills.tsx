@@ -28,18 +28,8 @@ export default function Skills() {
             <motion.div
               key={skill}
               variants={fadeUp}
-              whileHover={{
-                y: -6,
-              }}
-              className="
-                rounded-3xl
-                border
-                border-neutral-200
-                bg-white
-                p-6
-                text-center
-                shadow-sm
-              "
+              whileHover={{ y: -6 }}
+              className="rounded-3xl border border-neutral-200 bg-white p-6 text-center shadow-sm"
             >
               <h3 className="font-medium text-neutral-900">{skill}</h3>
             </motion.div>

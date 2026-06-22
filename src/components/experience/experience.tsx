@@ -35,38 +35,14 @@ export default function Experience() {
                 }}
                 className="relative pl-16"
               >
-                <div
-                  className="
-                    absolute
-                    left-0
-                    top-2
-                    h-8
-                    w-8
-                    rounded-full
-                    border-4
-                    border-white
-                    bg-[#B08A5B]
-                    shadow
-                  "
-                />
+                <div className=" absolute left-0 top-2 h-8 w-8 rounded-full border-4 border-white bg-[#B08A5B] shadow" />
 
                 <motion.div
-                  whileHover={{
-                    y: -4,
-                  }}
-                  className="
-                    rounded-3xl
-                    border
-                    border-neutral-200
-                    bg-white
-                    p-8
-                    shadow-sm
-                  "
+                  whileHover={{ y: -4 }}
+                  className="rounded-3xl border border-neutral-200 bg-white p-8 shadow-sm"
                 >
                   <p className="text-sm text-[#B08A5B]">{item.period}</p>
-
                   <h3 className="heading-font mt-2 text-3xl">{item.role}</h3>
-
                   <p className="mt-1 font-medium text-neutral-600">
                     {item.company}
                   </p>

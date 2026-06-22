@@ -6,9 +6,7 @@ import { fadeLeft, fadeRight, fadeUp } from "@/lib/animations";
 
 export default function Strengths() {
   return (
-    <section
-    id="strengths"
-    className="py-28">
+    <section id="strengths" className="py-28">
       <div className="section-container">
         <div className="grid gap-16 lg:grid-cols-2">
           <motion.div
@@ -51,14 +49,7 @@ export default function Strengths() {
                 transition={{
                   delay: index * 0.1,
                 }}
-                className="
-                  rounded-3xl
-                  border
-                  border-neutral-200
-                  bg-white
-                  p-8
-                  shadow-sm
-                "
+                className="rounded-3xl border border-neutral-200 bg-white p-8 shadow-sm"
               >
                 <h3 className="heading-font text-2xl text-neutral-900">
                   {strength.title}

@@ -6,9 +6,7 @@ import { fadeUp } from "@/lib/animations";
 
 export default function Languages() {
   return (
-    <section
-    id="languages"
-    className="pb-28">
+    <section id="languages" className="pb-28">
       <div className="section-container">
         <div className="mb-16 text-center">
           <span className="text-sm uppercase tracking-[0.25em] text-[#B08A5B]">
@@ -29,21 +27,9 @@ export default function Languages() {
               whileHover={{
                 x: 6,
               }}
-              className="
-                flex
-                items-center
-                justify-between
-                rounded-2xl
-                border
-                border-neutral-200
-                bg-white
-                px-6
-                py-5
-                shadow-sm
-              "
+              className="flex items-center justify-between rounded-2xl border border-neutral-200 bg-white px-6 py-5shadow-sm"
             >
               <span className="font-medium">{language.name}</span>
-
               <span className="text-[#B08A5B]">{language.level}</span>
             </motion.div>
           ))}

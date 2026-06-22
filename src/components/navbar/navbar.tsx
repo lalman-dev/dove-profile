@@ -11,18 +11,9 @@ const navItems = [
     label: "Journey",
     id: "experience",
   },
-
-  {
-    label: "Skills",
-    id: "skills",
-  },
   {
     label: "Strengths",
     id: "strengths",
-  },
-  {
-    label: "Objective",
-    id: "objective",
   },
   {
     label: "Connect",
@@ -54,9 +45,9 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed left-1/2 z-50 -translate-x-1/2 overflow-x-auto rounded-full border border-white/40 backdrop-blur-xl transition-all duration-300 ${scrolled ? "top-3 bg-white/95 shadow-xl px-3 py-2" : "top-5 bg-white/80 shadow-lg px-4 py-3"}`}
+      className={`fixed left-4 right-4 z-50 overflow-x-auto rounded-full border border-white/40 backdrop-blur-xl transition-all duration-300 ${scrolled ? "top-3 bg-transparent backdrop-blur-sm shadow-xl px-3 py-1" : "top-5 bg-white/80 shadow-lg px-4 py-3"}`}
     >
-      <div className="flex items-center gap-2">
+      <div className="flex items-center justify-between gap-2">
         <button
           onClick={() =>
             document.getElementById("home")?.scrollIntoView({
