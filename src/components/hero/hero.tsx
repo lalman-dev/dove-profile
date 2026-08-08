@@ -45,7 +45,7 @@ export default function Hero() {
                 variants={fadeUp}
                 className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-500"
               >
-                Customer Service & Hospitality
+                Reception, Customer Service & Hospitality
               </motion.p>
 
               <motion.h1
