@@ -69,7 +69,7 @@ export default function Hero() {
             >
               Former H&M Sales Advisor with experience in customer service,
               retail sales, POS operations, guest relations, and hospitality
-              support. Currently based in Sharjah and open to opportunities
+              support. Currently based in Abu Dhabi and open to opportunities
               across the UAE.
             </motion.p>
 
