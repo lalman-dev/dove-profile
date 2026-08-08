@@ -41,6 +41,8 @@ src/
 ## Getting Started
 
 ```bash
+git clone https://github.com/lalman-dev/dove-profile.git
+cd dove-profile
 npm install
 npm run dev
 ```
