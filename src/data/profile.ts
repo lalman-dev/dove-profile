@@ -13,9 +13,9 @@ Customer-focused professional with close to five years of experience across
 retail sales and front-of-house reception in the UAE and abroad. Former
 Sales Advisor at H&M with hands-on ownership of POS operations, cash
 reconciliation, and merchandising, followed by two years managing
-reception and administrative operations across multiple client sites in
-Abu Dhabi. Recognized for reliability, fast adaptability, and consistently
-strong client and guest relationships.
+reception and administrative operations across multiple client sites
+spanning Abu Dhabi, Sharjah, and Fujairah. Recognized for reliability,
+fast adaptability, and consistently strong client and guest relationships.
 `,
   skills: [
     "Client & Guest Relations",
@@ -81,7 +81,7 @@ I believe excellent customer service comes from understanding people's needs, st
       role: "Receptionist",
       period: "June 2024 – June 2026",
       points: [
-        "Provided front-desk reception and administrative support across multiple client locations in Abu Dhabi through a staffing agency placement, adapting to each client's systems and expectations.",
+        "Provided front-desk reception and administrative support across multiple client locations in Abu Dhabi, Sharjah, and Fujairah through a staffing agency placement, adapting to each client's systems and expectations.",
         "Served as the first point of contact for visitors and guests, setting a professional, welcoming tone at every posting.",
         "Managed multi-channel communication — phone, email, and in-person — liaising with clients, service providers, and internal teams.",
         "Coordinated schedules, appointments, and daily administrative workflows with precision and attention to detail.",
